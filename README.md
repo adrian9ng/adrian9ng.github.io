@@ -5,13 +5,13 @@
 
 This *webpage* is my portfolio
 
-### What will be here?
+### What Will Be Here?
 
 **I hope to show:**
 - Who I am
 - About myself
 - Projects I have made
 
-### Is this portfolio still in progress?
+### Is This Portfolio Still In Progress?
 
 Yes, I am currently in the process of coding it and I hope to continually add more
