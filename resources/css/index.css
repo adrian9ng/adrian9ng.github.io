@@ -1,3 +1,85 @@
+/* global */
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: monospace;
+    color: rgb(37, 37, 37);
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+/* header */
+header{
+    background-color: lightgray;
+    top: 0;
+    width: 100%;
+    padding: 1rem;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    text-align: center;
+    
+}
+
+nav li{
+    margin: 0 10vw;
+    text-align: center;
+    display: inline;
+}
+
+/* hero */
+h1{
+    font-size: 5vw;
+    font-family: 'Major Mono Display', monospace;
+}
+
+h2{
+    font-size: 1.5vw;
+}
+
+.hero{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.nametag{
+    display: inline-flex;
+    /* height: 50rem; */
+    height: 40vw;
+    width: 38%;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    line-height: 4vw;
+}
+
+.profile-image{
+    display: inline-flex;
+    /* height: 50rem; */
+    height: 40vw;
+    width: 38%;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-square{
+    border-radius: 15%;
+    height: 18vw;
+    width: 18vw;
+    /* height: 20rem;
+    width: 20rem; */
+    background-color: #84BCDA;
+    align-items: flex-end;
+    flex-flow: column-reverse;
+    position: relative;
+}
+.cutout{
+    width: 75%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
 }
