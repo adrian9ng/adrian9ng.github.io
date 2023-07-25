@@ -1,7 +1,13 @@
 /* global */
 *{
     font-family: 'Noto Sans Cypro Minoan', sans-serif;
+    /* font-family: monospace; */
     color: rgb(37, 37, 37);
+    /* border: black solid 1px; */
+}
+
+a{
+    color: blue;
 }
 
 p{
@@ -23,29 +29,60 @@ h3{
     font-size: 2vw;
 }
 
-/* header */
-header{
-    background-color: lightgray;
-    top: 0;
-    width: 100%;
-    padding: 1rem;
+h4{
+    font-size: 1.5vw;
 }
 
+/* header */
 nav {
-    position: sticky;
+    background-color: lightgray;
+    width: 100%;
     top: 0;
     text-align: center;
-    
+    padding: 0.3vw 0;
+    z-index: 1;
 }
 
 nav li{
     margin: 0 5%;
     text-align: center;
     display: inline;
+    align-content: center;
+    width: 100%;
+    vertical-align: middle;
+}
+
+nav a {
+    color: rgb(40, 40, 40);
+    text-decoration: none;
+    font-size: 1vw;
+    text-align: center;
 }
 
 a:hover{
     cursor: pointer;
+    color: rgb(40, 40, 40);
+    text-decoration: underline;
+}
+
+nav a:hover{
+    text-decoration: none;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + main{
+    padding-top: 2vw;
+}
+
+.home-logo{
+    font-family: 'Major Mono Display', monospace;
+    font-size: 2vw;
+    text-align: center;
 }
 
 /* hero */
@@ -54,11 +91,11 @@ a:hover{
     width: 100%;
     justify-content: center;
     /* border-bottom: gray solid 1px; */
+    padding-top: 3vw;
 }
 
 .nametag{
     display: inline-flex;
-    /* height: 50rem; */
     height: 40vw;
     width: 38%;
     justify-content: center;
@@ -69,7 +106,6 @@ a:hover{
 
 .profile-image{
     display: inline-flex;
-    /* height: 50rem; */
     height: 40vw;
     width: 38%;
     justify-content: center;
@@ -80,8 +116,6 @@ a:hover{
     border-radius: 15%;
     height: 18vw;
     width: 18vw;
-    /* height: 20rem;
-    width: 20rem; */
     background-color: #84BCDA;
     align-items: flex-end;
     flex-flow: column-reverse;
@@ -95,9 +129,16 @@ a:hover{
     left: 10%;
 }
 
+.cutout:hover{
+    width: 80%;
+    left: 8%;
+}
+
 /* Who Am I */
 #whoami-section{
     text-align: center;
+    padding-top: 7vw;
+    margin-top: -7vw;
 }
 
 ul.whoami-list{
@@ -108,6 +149,7 @@ ul.whoami-list{
 .coding-icons{
     display: inline-flex;
     width: 75%;
+    margin-top: 1vw;
 }
 
 .coding-icons a{
@@ -122,26 +164,109 @@ ul.whoami-list{
 }
 
 /* About Me */
-.aboutme-title{
-    
+#aboutme-section{
+    justify-content: center;
+    text-align: center;
+    padding-top: 7vw;
+    margin-top: -7vw;
 }
 
-.university{
-    width: 80%;
+.aboutme-subsec{
+    width: 70%;
     display: inline-flex;
     margin: 3vw 0;
 }
-.university-image{
+.aboutme-image{
     width: 50%;
 }
 
-.university-image img{
+.aboutme-image img{
     border-radius: 15%;
     height: 18vw;
     width: 18vw;
     object-fit: cover;
 }
 
-.university-text{
+.aboutme-text{
     width: 50%;
+    align-self: center;
+    justify-content: center;
+    display: inline-flex;
+}
+
+.textbox{
+    width: 75%;
+    text-align: center;
+    height: 18vw;
+    display: inline-flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: center;
+}
+
+/* Projects */
+#projects-section{
+    padding-top: 7vw;
+    /* margin-top: -7vw; */
+    text-align: center;
+    margin-top: 3vw;
+    /* margin-bottom: 12vw; */
+}
+
+.banner{
+    margin-top: 5vw;
+    margin-bottom: 7vw;
+    background-image: url("../images/IMG_8094.jpg");
+    width: 100%;
+    height: 40vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner p {
+    color: white;
+    font-size: 8vw;
+}
+
+/* Contact Me */
+#contactme-section{
+    text-align: center;
+}
+
+.contact-icons{
+    display: inline-flex;
+    width: 60%;
+    margin: 2vw 0;
+}
+
+.contact-block{
+    display: inline-flex;
+    flex-flow: row;
+    align-items: center;
+}   
+
+.contact-icons img{
+    width: 25%;
+    margin: 1vw;
+}
+
+/* footer */
+footer{
+    background-color: lightgray;
+    height: 2vw;
+    margin-top: 5vw;
+}
+
+.footer-div{
+    display: inline;
+}
+
+footer p, footer a{
+    font-size: 0.75vw;
+    color: black;
+    display: inline;
 }
