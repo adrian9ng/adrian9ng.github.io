@@ -1,11 +1,26 @@
 /* global */
 *{
-    font-family: monospace;
+    font-family: 'Noto Sans Cypro Minoan', sans-serif;
     color: rgb(37, 37, 37);
 }
 
-a:hover{
-    cursor: pointer;
+p{
+    font-size: 1vw;
+    color: rgb(40, 40, 40);
+}
+
+h1{
+    font-size: 5vw;
+    font-family: 'Major Mono Display', monospace;
+}
+
+h2{
+    font-size: 1.5vw;
+    font-family: monospace;
+}
+
+h3{
+    font-size: 2vw;
 }
 
 /* header */
@@ -29,20 +44,16 @@ nav li{
     display: inline;
 }
 
+a:hover{
+    cursor: pointer;
+}
+
 /* hero */
-h1{
-    font-size: 5vw;
-    font-family: 'Major Mono Display', monospace;
-}
-
-h2{
-    font-size: 1.5vw;
-}
-
 .hero{
     display: flex;
     width: 100%;
     justify-content: center;
+    /* border-bottom: gray solid 1px; */
 }
 
 .nametag{
@@ -82,4 +93,55 @@ h2{
     position: absolute;
     bottom: 0;
     left: 10%;
+}
+
+/* Who Am I */
+#whoami-section{
+    text-align: center;
+}
+
+ul.whoami-list{
+    font-size: 1.25vw;
+    line-height: 2vw;
+}
+
+.coding-icons{
+    display: inline-flex;
+    width: 75%;
+}
+
+.coding-icons a{
+    justify-content: center;
+}
+
+.coding-icons img{
+    width: 25%;
+    height: auto;
+    margin-top: 10%;
+    margin-bottom: 10vw;
+}
+
+/* About Me */
+.aboutme-title{
+    
+}
+
+.university{
+    width: 80%;
+    display: inline-flex;
+    margin: 3vw 0;
+}
+.university-image{
+    width: 50%;
+}
+
+.university-image img{
+    border-radius: 15%;
+    height: 18vw;
+    width: 18vw;
+    object-fit: cover;
+}
+
+.university-text{
+    width: 50%;
 }
