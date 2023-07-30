@@ -33,6 +33,10 @@ h4{
     font-size: 1.5vw;
 }
 
+h5{
+    font-size: 1vw;
+}
+
 /* header */
 nav {
     background-color: lightgray;
@@ -57,6 +61,10 @@ nav a {
     text-decoration: none;
     font-size: 1vw;
     text-align: center;
+}
+
+.nav-aboutmemobile{
+    display: none;
 }
 
 a:hover{
@@ -90,8 +98,7 @@ nav a:hover{
     display: flex;
     width: 100%;
     justify-content: center;
-    /* border-bottom: gray solid 1px; */
-    padding-top: 3vw;
+    padding-top: 1vw;
 }
 
 .nametag{
@@ -163,12 +170,20 @@ ul.whoami-list{
     margin-bottom: 10vw;
 }
 
+.whoami-br{
+    display: none;
+}
+
 /* About Me */
 #aboutme-section{
     justify-content: center;
     text-align: center;
     padding-top: 7vw;
     margin-top: -7vw;
+}
+
+#aboutme-section-mobile{
+    display: none;
 }
 
 .aboutme-subsec{
@@ -269,4 +284,224 @@ footer p, footer a{
     font-size: 0.75vw;
     color: black;
     display: inline;
+}
+
+@media only screen and (max-width: 768px){
+    h1{
+        font-size: 10vw;
+    }
+
+    h2{
+        font-size: 4vw;
+    }
+
+    h3{
+        font-size: 6vw;
+    }
+
+    h4{
+        font-size: 4vw;
+    }
+
+    h5{
+        font-size: 2vw;
+    }
+
+    /* header */
+    nav {
+        padding-bottom: 1vw;
+    }
+
+
+    nav a {
+        font-size: 2vw;
+    }
+
+    .nav-aboutme{
+        display: none;
+    }
+
+    .nav-aboutmemobile{
+        display: inline;
+    }
+
+    /* hero */
+    .hero{
+        display: block;
+        width: 100%;
+        justify-content: center;
+        padding-top: 1vw;
+    }
+
+    .nametag{
+        display: flex;
+        height: 45vw;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        line-height: 10vw;
+    }
+
+    .profile-image{
+        display: flex;
+        height: 30vw;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile-square{
+        border-radius: 15%;
+        height: 35vw;
+        width: 35vw;
+        background-color: #84BCDA;
+        align-items: flex-end;
+        flex-flow: column-reverse;
+        position: relative;
+    }
+
+    /* Who Am I */
+    #whoami-section{
+        text-align: center;
+        padding-top: 7vw;
+        margin-top: 5vw;
+    }
+
+    ul.whoami-list{
+        font-size: 3vw;
+        line-height: 3vw;
+        width: 80%;
+        display: inline-block;
+    }
+
+    .whoami-br{
+        display: block;
+    }
+
+    .coding-icons{
+        display: inline-flex;
+        width: 90%;
+        margin-top: 3vw;
+        margin-left: 0.5vw;
+        margin-left: 0.5vw;
+    }
+
+    .coding-icons a{
+        justify-content: center;
+    }
+
+    .coding-icons img{
+        width: 50%;
+        height: auto;
+        margin-top: 10%;
+        margin-bottom: 10vw;
+    }
+
+    /* About Me */
+    #aboutme-section{
+        /* justify-content: center;
+        text-align: center; */
+        /* padding-top: 0vw;
+        margin-top: 0vw; */
+        display: none;
+    }
+
+    #aboutme-section-mobile{
+        justify-content: center;
+        text-align: center;
+        padding-top: 7vw;
+        margin-top: -7vw;
+        display: block;
+    }
+
+    .aboutme-subsec{
+        width: 100%;
+        height: 100vw;
+        display: inline-block;
+        flex-flow: column;
+        margin: 5vw 0;
+        /* overflow: hidden; */
+        /* margin: 15vw 0; */
+    }
+
+    .aboutme-image{
+        width: 100%;
+        height: 100%;
+        display: block;
+        padding: 3vw;
+    }
+
+    .aboutme-image img{
+        /* border-radius: 15%; */
+        height: 50vw;
+        width: 50vw;
+        /* object-fit: cover; */
+    }
+
+    .aboutme-text{
+        width: 100%;
+        /* align-self: center;
+        justify-content: center;
+        display: inline-flex; */
+    }
+
+    .textbox{
+        /* width: 75%;
+        text-align: center; */
+        height: 100%;
+        width: 80%
+        /* display: inline-flex;
+        align-items: center;
+        flex-flow: column;
+        justify-content: center; */
+    }
+
+    .textbox p{
+        font-size: 3vw;
+    }
+
+    .aboutme-br{
+        display: block;
+        content: ""; /* clears default height */
+        margin-top: 1.5vw;
+    }
+
+    /* Contact Me */
+    #contactme-section{
+        text-align: center;
+    }
+
+    .contact-icons{
+        display: inline-flex;
+        width: 90%;
+        margin: 2vw 0;
+    }
+
+    .contact-block{
+        display: inline-flex;
+        flex-flow: row;
+        align-items: center;
+    }   
+
+    .contact-icons img{
+        width: 25%;
+        margin: 1vw;
+    }
+
+    /* footer */
+    footer{
+        background-color: lightgray;
+        height: 100%;
+    }
+
+    .footer-div{
+        display: inline;
+    }
+
+    footer p, footer a{
+        font-size: 1.5vw;
+        color: black;
+        display: inline;
+    }
 }

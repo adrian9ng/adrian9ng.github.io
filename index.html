@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Cypro+Minoan&display=swap" rel="stylesheet">
-    
+    <link rel="icon" type="image/x-icon" href="resources/images/IMG_9009.jpg">
 </head>
 <body>
     <header>
@@ -19,7 +19,8 @@
             <ul>
                 <li><a href=""><span class="home-logo">A</span></a></li>
                 <li><a href="#whoami-section">Who Am I</a></li>
-                <li><a href="#aboutme-section">About Me</a></li>
+                <li class="nav-aboutme"><a href="#aboutme-section">About Me</a></li>
+                <li class="nav-aboutmemobile"><a href="#aboutme-section-mobile">About Me</a></li>
                 <li><a href="#projects-section">Projects</a></li>
                 <li><a href="#contactme-section">Contact Me</a></li>
             </ul>
@@ -47,9 +48,9 @@
             <h3>Who Am I?</h3>
             <br>
             <ul class="whoami-list">
-                <li>I am a recent Software Engineering graduate</li>
-                <li>I am currently completing a career path course on Front-End Development</li>
-                <li>I am eager for a chance to learn even more about design and development, and put my skills to practice</li>
+                <li>I am a recent Software Engineering graduate</li><br class="whoami-br">
+                <li>I am currently completing a career path course on Front-End Development</li><br class="whoami-br">
+                <li>I am eager for a chance to learn even more about design and development, and put my skills to practice</li><br class="whoami-br">
                 <li>I have used / am familiar with different languages such as:</li>
             </ul>
             <div class="coding-icons">
@@ -80,6 +81,7 @@
         <!-- About Me -->
         <section id="aboutme-section">
             <h3 id="aboutme-title">About Me</h3>
+            
             <div class="aboutme-subsec">
                 <div class="aboutme-image">
                     <img src="resources/images/C-6-9781.png" alt="Picture of me graduating">
@@ -96,6 +98,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="aboutme-subsec">
                 <div class="aboutme-text">
                     <div class="textbox">
@@ -112,6 +115,7 @@
                     <img src="resources/images/IMG_7402.jpg" alt="Picture of me on my computer">
                 </div>
             </div>
+
             <div class="aboutme-subsec">
                 <div class="aboutme-image">
                     <img src="resources/images/IMG_9009.jpg" alt="Picture of me on a boat">
@@ -129,7 +133,65 @@
                         <p>I have also visited other countries outside of Asia such as, US(Hawaii), Greece and Spain.</p>
                     </div>
                 </div>
+            </div>    
+        </section>
+
+        <section id="aboutme-section-mobile">
+            <h3 id="aboutme-title">About Me</h3>
+            
+            <div class="aboutme-subsec">
+                <div class="aboutme-text">
+                    <div class="textbox">
+                        <h4>University</h4>
+                        <br class="aboutme-br">
+                        <p>I graduated from Lancaster University which ranks within the top 10 in the UK with First Class Honours.</p>
+                        <br class="aboutme-br">
+                        <p>At university, I learned the fundamental backbone of coding which has taught me to easily adapt to learning new languages and concepts.</p>
+                        <br class="aboutme-br">
+                        <p>We mainly focused on object orientated programming in java and also completed modules on databases, networking, cryptography, HCI, and many more (shown on my <a href="https://www.linkedin.com/in/adrian9ng/" title="LinkedIn/adrian9ng" target="_blank">LinkedIn</a>).</p>
+                    </div>
+                </div>
+                <div class="aboutme-image">
+                    <img src="resources/images/C-6-9781.png" alt="Picture of me graduating">
+                </div>
             </div>
+
+            <div class="aboutme-subsec">
+                <div class="aboutme-text">
+                    <div class="textbox">
+                        <h4>Interests And Hobbies</h4>
+                        <br class="aboutme-br">
+                        <p>Right now, my passion for coding has sparked again since my last year of university as the idea of being able to code things as a career seems fun.</p>
+                        <br class="aboutme-br">
+                        <p>I enjoy playing games with my friends, Pokémon, building PCs, watching anime, and reading about new technology.</p>
+                        <br class="aboutme-br">
+                        <p>In the future, I hope to code more and make more projects for fun which I use to show my skills.</p>
+                    </div>
+                </div>
+                <div class="aboutme-image">
+                    <img src="resources/images/IMG_7402.jpg" alt="Picture of me on my computer">
+                </div>
+            </div>
+
+            <div class="aboutme-subsec">
+                <div class="aboutme-text">
+                    <div class="textbox">
+                        <h4>Travel</h4>
+                        <br class="aboutme-br">
+                        <p>Throughout my life, I have travelled round the world and visited far-away countries.</p>
+                        <br class="aboutme-br">
+                        <p>As my ethnicity is Chinese(Hong Kong) and I was born and raised in the UK, I have visited Hong Kong the most.</p>
+                        <br class="aboutme-br">
+                        <p>With an interest in Asian culture, I have been to many Asian countries such as Japan, South Korea and Thailand.</p>
+                        <br class="aboutme-br">
+                        <p>I have also visited other countries outside of Asia such as, US(Hawaii), Greece and Spain.</p>
+                    </div>
+                </div>
+                <div class="aboutme-image">
+                    <img src="resources/images/IMG_9009.jpg" alt="Picture of me on a boat">
+                </div>
+            </div>
+            
         </section>
 
         <!--Projects-->
@@ -177,9 +239,12 @@
     <footer>
         <div id="footer-div">
             <p>All icons sourced from www.flaticon.com: </p>
-            <a href="https://www.flaticon.com/free-icons/email" title="email icons" target="_blank">Email icons created by Freepik - Flaticon | </a>
-            <a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons" target="_blank">Instagram icons created by Freepik - Flaticon | </a>
-            <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons" target="_blank">Linkedin icons created by Freepik - Flaticon | </a>
+            <a href="https://www.flaticon.com/free-icons/email" title="email icons" target="_blank">Email icons created by Freepik - Flaticon</a>
+            <p> | </p>
+            <a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons" target="_blank">Instagram icons created by Freepik - Flaticon</a>
+            <p> | </p>
+            <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons" target="_blank">Linkedin icons created by Freepik - Flaticon</a>
+            <p> | </p>
             <a href="https://www.flaticon.com/free-icons/discord" title="discord icons" target="_blank">Discord icons created by Freepik - Flaticon</a> 
         </div>
     </footer>
